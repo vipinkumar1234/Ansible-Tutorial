@@ -48,7 +48,7 @@ Step 1: Create a Playbook
 
 sudo nano install_apache.yml
 
----
+<!-- ---
 - name: Install Apache on Worker EC2
   hosts: Prodservers
   become: yes
@@ -60,7 +60,7 @@ sudo nano install_apache.yml
     - name: Install Apache2
       apt:
         name: apache2
-        state: present
+        state: present -->
 
 
 Step 2: Run the Playbook
