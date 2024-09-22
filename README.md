@@ -4,12 +4,7 @@ Installing and configuring Ansible on Ubuntu EC2 instance:
 Step 1: Install Ansible on Master EC2 Instance
 
 # Commands
-sudo apt-get update 
-sudo apt-get install -y software-properties-common
-sudo apt-add-repository  ppa:ansible/ansible
-sudo apt update
-sudo apt install ansible
-ansible --version
+1. sudo apt-get update, 2. sudo apt-get install -y software-properties-common 3. sudo apt-add-repository  ppa:ansible/ansible 4. sudo apt update 5. sudo apt install ansible 6. ansible --version
 
 Step 2: on Worker 
 
