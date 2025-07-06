@@ -1,0 +1,21 @@
+tasks:
+- name: Template services
+  ansible.builtin.template:
+    src: "{{ item }}.j2"
+    dest: /etc/systemd/system/{{ item }}.service
+  # Note: if *any* loop iteration triggers a change, *all* handlers are run
+  notify: Restart {{ item }}
+  loop:
+    - memcached
+    - apache
+
+handlers:
+  - name: Restart memcached
+    ansible.builtin.service:
+      name: memcached
+      state: restarted
+
+  - name: Restart apache
+    ansible.builtin.service:
+      name: apache
+      state: restarted
