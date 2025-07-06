@@ -1,0 +1,27 @@
+myrole/
+├── tasks/
+│   └── main.yml
+├── handlers/
+│   └── main.yml
+├── templates/
+├── files/
+├── vars/
+│   └── main.yml
+├── defaults/
+│   └── main.yml
+├── meta/
+│   └── main.yml
+
+######################################################################################
+
+| Folder       | Purpose                             | Example                        |
+| ------------ | ----------------------------------- | ------------------------------ |
+| `tasks/`     | Main tasks for the role             | Install Nginx, configure file  |
+| `handlers/`  | Restart services if needed          | Restart Nginx on config change |
+| `templates/` | Jinja2 template files               | `nginx.conf.j2`                |
+| `files/`     | Static files to copy                | `index.html`                   |
+| `vars/`      | Hardcoded variables (high priority) | `nginx_port: 80`               |
+| `defaults/`  | Default vars (can be overridden)    | `nginx_user: www-data`         |
+| `meta/`      | Dependencies and metadata           | `dependencies: []`             |
+
+############################################################################################

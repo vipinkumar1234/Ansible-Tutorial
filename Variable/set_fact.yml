@@ -1,0 +1,5 @@
+###  Defined Using set_fact (during runtime)
+
+- name: Set a dynamic variable
+  set_fact:
+    today: "{{ lookup('pipe', 'date +%Y-%m-%d') }}"

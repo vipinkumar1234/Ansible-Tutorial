@@ -1,0 +1,2 @@
+- debug:
+    msg: "The OS is {{ ansible_distribution }}"

@@ -1,0 +1,5 @@
+### Defined inside roles:
+
+defaults/main.yml – lowest priority
+
+vars/main.yml – higher priority

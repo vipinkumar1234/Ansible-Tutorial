@@ -1,0 +1,8 @@
+- name: Install multiple packages
+  package:
+    name: "{{ item }}"
+    state: present
+  loop:
+    - git
+    - curl
+    - wget

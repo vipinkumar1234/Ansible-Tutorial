@@ -1,0 +1,8 @@
+- name: Simple Playbook
+  hosts: all
+  vars:
+    my_message: "Hello from Ansible!"
+  tasks:
+    - name: Print a message
+      debug:
+        msg: "{{ my_message }}"

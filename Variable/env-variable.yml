@@ -1,0 +1,5 @@
+####  Used for setting env values for a task.
+- name: Run script with env
+  shell: "./myscript.sh"
+  environment:
+    PATH: "/usr/local/bin:{{ ansible_env.PATH }}"

@@ -1,0 +1,8 @@
+### Stored in these folders:
+
+group_vars/
+host_vars/
+
+#####   Example group_vars/web.yml
+
+app_user: deploy

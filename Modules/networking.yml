@@ -1,0 +1,6 @@
+- name: Set static IP using nmcli
+  nmcli:
+    conn_name: eth0
+    ifname: eth0
+    type: ethernet
+    ip4: 192.168.1.100/24

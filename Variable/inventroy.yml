@@ -1,0 +1,4 @@
+#####  Defined in Inventory File
+
+[web]
+web1 ansible_host=192.168.1.10 app_port=8080

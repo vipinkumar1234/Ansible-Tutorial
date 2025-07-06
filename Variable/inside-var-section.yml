@@ -1,0 +1,4 @@
+####  Defined Inside vars Section
+
+vars:
+  package_name: httpd

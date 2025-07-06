@@ -1,0 +1,6 @@
+- name: Launch EC2 instance
+  ec2:
+    key_name: mykey
+    instance_type: t2.micro
+    image: ami-12345678
+    wait: yes

@@ -1,0 +1,3 @@
+vars_prompt:
+  - name: "username"
+    prompt: "Enter your username"
